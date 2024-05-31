@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Archive Pages</title>
+    <link rel="stylesheet" href="style.css">
+
+</head>
+<body class="bg-gradient-to-b from-indigo-700 to-teal-500 min-h-screen">
+    <!--Initial Screen-->
+    <div id="initial-screen" class="flex flex-col justify-center items-center">
+        <img src="img/Archive-Pages.png" alt="Archive" class="object-scale-down h-48 w-52 mt-16">
+        <h1 class="title">Archive</h1>
+        <h1 class="title">Pages</h1>
+        <!--Buttons-->
+        <a href="#" id="login-button" class="rounded-md bg-white px-36 py-2 text-base mt-20 font-bold hover:-translate-y-1 hover:scale-110 hover:bg-yellow-300 hover:text-white  duration-300">Login</a>
+        <a href="#" id="signup-button"class="rounded-md border-white border-2 px-134 py-2 text-base mt-4 font-bold text-white hover:-translate-y-1 hover:scale-110 hover:bg-yellow-300 hover:text-white hover:border-transparent duration-300">Sign Up</a>
+        <a href="#" class="font-normal text-white text-sm underline underline-offset-1 mt-20">Continue as a guest</a>
+    </div>
+
+    <!--Login Screen-->
+    <div id="login-screen" class="hidden flex flex-col justify-center items-center">
+        <h1 class="title mt-12">Welcome!</h1>
+        <h2 class="text-white font-normal text-base tracking-tighter mt-1">Login into your account</h2>
+
+        <form class="mt-12">
+            <!--Email Address Form-->
+            <div>
+                <label for="email" class="inputdesc">Email Address</label>
+                <input type="email" id="email" name="email" class="inputbox" required>
+            </div>
+            <!--Password Form-->
+            <div>
+                <label for="password" class="inputdesc mt-4">Password</label>
+                <input type="password" id="password" name="password" class="inputbox" required>
+            </div>
+            <!--Forgot Password-->
+            <div class="text-end mt-2">
+                <p class="text-normal text-white font-normal tracking-tighter justify-self-center cursor-pointer">Forgot password?</p>
+            </div>
+            <!--Submit-->
+            <div>
+                <button type="submit" class="submit">Login</button>
+            </div>
+        </form>
+
+        <div class="inline-flex items-center justify-center mt-14 relative">
+            <hr class="w-32 h-px my-0 mr-4 border-0 bg-white">
+            <span class="font-normal bg-transparent text-white">or Login With</span>
+            <hr class="w-32 h-px my-0 ml-4 border-0 bg-white">
+        </div>
+        <!--Google-->
+        <div>
+            <button type="submit" class="googlesubmit">
+                <img src="img/Google.png" alt="Google" class="absolute inset-0 m-auto h-5 w-15">
+            </button>
+        </div>
+
+        <div class="inline-flex  mt-8">
+            <p class="font-normal text-black text-sm mr-1">Don't have an account?</p>
+            <a href="#" id="signup-button-login" class="font-normal text-white text-sm">Sign up</a>
+        </div>
+    </div>
+
+    <!--Sign up-->
+    <div id="signup-screen" class="hidden flex flex-col justify-center items-center">
+        <h1 class="title mt-12">Create Account</h1>
+        <h2 class="text-white font-normal text-base tracking-tighter mt-1">to get started now!</h2>
+
+        <form class="mt-12">
+            <!--Email Address Form-->
+            <div>
+                <label for="email" class="inputdesc">Email Address</label>
+                <input type="email" id="email" name="email" class="inputbox" required>
+            </div>
+            <!--Password Form-->
+            <div>
+                <label for="password" class="inputdesc mt-4">Password</label>
+                <input type="password" id="password" name="password" class="inputbox">
+            </div>
+            <!-- Confirm Password Form-->
+            <div>
+                <label for="confim-password" class="inputdesc mt-4">Confirm Password</label>
+                <input type="password" id="confirm-password" name="confirm-password" class="inputbox" required>
+            </div>
+            <!--Submit-->
+            <div>
+                <button type="submit" class="submit">Sign Up</button>
+            </div>
+        </form>
+
+        <div class="inline-flex items-center justify-center mt-14 relative">
+            <hr class="w-30 h-px my-0 mr-4 border-0 bg-white">
+            <span class="font-normal bg-transparent text-white">or Sign Up With</span>
+            <hr class="w-30 h-px my-0 ml-4 border-0 bg-white">
+        </div>
+        <!--Google-->
+        <div>
+            <button type="submit" class="googlesubmit">
+                <img src="img/Google.png" alt="Google" class="absolute inset-0 m-auto h-5 w-15">
+            </button>
+        </div>
+
+        <div class="inline-flex  mt-8">
+            <p class="font-normal text-black text-sm mr-1">Already have an account?</p>
+            <a href="#" id="login-button-signup" class="font-normal text-white text-sm">Login</a>
+        </div>
+    </div>
+
+    <script src="index.js"></script>
+</body>
+</html>
